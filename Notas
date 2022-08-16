@@ -1,0 +1,7 @@
+Comp
+
+g++ main.cpp -o firstOpenGlApp -lglut -lGLU -lGL
+
+Run
+
+./firstOpenGlApp
