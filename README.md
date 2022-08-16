@@ -1,12 +1,12 @@
 # OpenGL
 Criado para estudo de criação de objetos usando OpenGL
 
-## UBUNTU
+* ---- UBUNTU ----
 
-Para compilar ->
+  * Para compilar ->
 
-  g++ ARQUVIO.cpp -o NOME_DO_APP -lglut -lGLU -lGL
+    * g++ ARQUVIO.cpp -o NOME_DO_APP -lglut -lGLU -lGL
   
-Para executar -> 
+  * Para executar -> 
 
-./NOME_DO_APP
+    * ./NOME_DO_APP
