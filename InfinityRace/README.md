@@ -1,0 +1,1 @@
+g++ main.cpp camera.cpp car.cpp game.cpp street.cpp  -o InfinityRace -lGL -lglut -lGLU
