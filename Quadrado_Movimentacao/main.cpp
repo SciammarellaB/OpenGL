@@ -99,14 +99,14 @@ void movement()
         cubePosX += 0.10;
     }
     else{
-        cubePosX -= 0.10;
+        cubePosX -= 0.09;
     }
 
     if(stateY == 0){
-        cubePosY += 0.10;
+        cubePosY += 0.08;
     }
     else{
-        cubePosY -= 0.10;
+        cubePosY -= 0.07;
     }
 }
 
