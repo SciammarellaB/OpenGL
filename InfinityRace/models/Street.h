@@ -1,5 +1,4 @@
 #include <GL/glut.h>
-#include <time.h>
 
 class Street {
     public:
@@ -25,45 +24,42 @@ class Street {
 
         glBegin(GL_QUADS);
 
+        //BASE COLOR
+        glColor3f(0.5, 0.5, 0.5);
+
         //3D MESH
 
         //front
-        glColor3f(1.0,1.0,0.0);
         glVertex3f(-1.0,1.0,1.0);
         glVertex3f(-1.0,-1.0,1.0);
         glVertex3f(1.0,-1.0,1.0);
         glVertex3f(1.0,1.0,1.0);
 
         //back
-        glColor3f(0.0,0.5,1.0);
         glVertex3f(1.0,1.0,-1.0);
         glVertex3f(1.0,-1.0,-1.0);
         glVertex3f(-1.0,-1.0,-1.0);
         glVertex3f(-1.0,1.0,-1.0);
 
         //right
-        glColor3f(0.5,0.0,0.5);
         glVertex3f(1.0,1.0,1.0);
         glVertex3f(1.0,-1.0,1.0);
         glVertex3f(1.0,-1.0,-1.0);
         glVertex3f(1.0,1.0,-1.0);
 
         //left
-        glColor3f(1.0,1.0,0.5);
         glVertex3f(-1.0,1.0,-1.0);
         glVertex3f(-1.0,-1.0,-1.0);
         glVertex3f(-1.0,-1.0,1.0);
         glVertex3f(-1.0,1.0,1.0);
 
         //top
-        glColor3f(0.6,1.0,1.7);
         glVertex3f(-1.0,1.0,-1.0);
         glVertex3f(-1.0,1.0,1.0);
         glVertex3f(1.0,1.0,1.0);
         glVertex3f(1.0,1.0,-1.0);
         
         //bottom
-        glColor3f(0.7,0.2,1.0);
         glVertex3f(-1.0,-1.0,-1.0);
         glVertex3f(-1.0,-1.0,1.0);
         glVertex3f(1.0,-1.0,1.0);

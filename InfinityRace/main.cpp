@@ -2,6 +2,8 @@
 
 #define FPS 60
 
+Camera cam;
+
 void init();
 void display();
 void reshape(int, int);
@@ -24,9 +26,10 @@ int main(int argc, char** argv)
 
 void init()
 {
-    glClearColor(0.0, 0.0, 0.0, 1.0);
-    glClearDepth(1.0);
-    glEnable(GL_DEPTH_TEST);
+    setup();
+    glEnable(GL_CULL_FACE | GL_DEPTH_TEST);
+    glFrontFace(GL_CW);
+    glCullFace(GL_BACK);
     glDepthFunc(GL_LEQUAL);
     glShadeModel(GL_SMOOTH);
     glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
@@ -49,7 +52,9 @@ void reshape(int w, int h)
     glViewport(0,0, (GLsizei)w, (GLsizei)h);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    camera(60.0, 1.0, 2.0, 200.0);
+    //START CAMERA
+    cam.config(60.0, 1.0, 2.0, 1000.0);
+    cam.startPosition({0.0f, 2.0f, 15.0f});
     glMatrixMode(GL_MODELVIEW);
 }
 
